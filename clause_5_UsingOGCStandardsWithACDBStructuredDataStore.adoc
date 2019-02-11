@@ -5,7 +5,7 @@ The U.S. Department of Defense (DoD) developed the Joint Training Data Services 
 The TGS Solution: Have a repository and user interface that provides access to a single source of data through a persistent web service AND set and enforce a standard data structure based on industry standard Open Geospatial Consortium (OGC) approved formats, to normalize terrain data across Force Development simulations.
 
 
-image::images/image1.jpg[image,width=581,height=360]
+image::images/image1.jpg[image,width=600,height=380]
 
 
 The above figure, DoD C-TGS Architecture (Chambers and Sherman, 2014), represents the implementation architecture for C-TGS. Implementation software represents a mix of commercial/proprietary and open source. At the heart of the C-TGS are two data stores: A CDB structured data store and a 3D model data store. All applications at the Visualization and Dissemination level interface the data stores via OGC service interfaces.
