@@ -5,10 +5,9 @@ The U.S. Department of Defense (DoD) developed the Joint Training Data Services 
 The TGS Solution: Have a repository and user interface that provides access to a single source of data through a persistent web service AND set and enforce a standard data structure based on industry standard Open Geospatial Consortium (OGC) approved formats, to normalize terrain data across Force Development simulations.
 
 
-*Figure: DoD C-TGS Architecture (Chambers and Sherman, 2014)*
 image::images/image1.jpg[image,width=581,height=360]
 
 
-The above figure represents the implementation architecture for C-TGS. Implementation software represents a mix of commercial/proprietary and open source. At the heart of the C-TGS are two data stores: A CDB structured data store and a 3D model data store. All applications at the Visualization and Dissemination level interface the data stores via OGC service interfaces.
+The above figure, DoD C-TGS Architecture (Chambers and Sherman, 2014), represents the implementation architecture for C-TGS. Implementation software represents a mix of commercial/proprietary and open source. At the heart of the C-TGS are two data stores: A CDB structured data store and a 3D model data store. All applications at the Visualization and Dissemination level interface the data stores via OGC service interfaces.
 
 Connecting OGC Web Services to an open, simulation-optimized terrain data store, such as a CDB structured data store, results in high-end performance for serving and rendering geospatial content, the ability to dynamically modify terrain and support for all levels of simulation. a high-end simulation system using CDB can dynamically update the terrain (such as a bomb crater) and have that dynamically updated terrain instantly served by the Geospatial Discovery Service to any OGC compliant system, such as Esri® ArcMap, QGIS, or a mobile web page. The underlying architecture and framework of the C-TGS provide a mechanism to move high-end simulation to the point where data sharing, crowd-sourcing, and dynamic terrain are in-sync with GIS tools and simulation system edits of the terrain repository.
