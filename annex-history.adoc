@@ -1,0 +1,17 @@
+[appendix]
+:appendix-caption: Annex
+== Revision History
+
+[width="90%",options="header"]
+|===
+|Date |Release |Editor | Primary clauses modified |Description
+|2015-10-20 | |C. Reed |Many |First major “scrub”
+|2015-11-20 | |C. Reed |Many |Prepare for first publication
+|2016-02-20 | |D Graham and C Reed |Many |Prepare for OAB Review
+|2016-04-03 | |D Graham | |Prepare for RFC
+|2016-05-18 | |C. Reed |Minor edits |Figures.
+|2016-10-05 |1.0 |C. Reed |Various edits |Preparation for publication as an official OGC BP
+|2016-11-20 |1.0 |C. Reed |Various |Edits for publication
+|2017-01-21 |1.0 |C. Reed | |Ready for publication – add references
+|2018-01-16 |1.1 |C. Reed |Various |Minor corrections to typos.
+|===
