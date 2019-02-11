@@ -1,3 +1,5 @@
 The very first figure (DoD C-TGS Architecture) was not numbered in the MS Word version.
 
 There is a typo in the MS Word version: "CB-TGS" should be "C-TGS"
+
+There is a typo in the volume summary section. CBD should be CDB.
