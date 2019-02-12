@@ -1,0 +1,12 @@
+{
+        "1": {
+                "OGC_doc_number": "15-120r6",
+                "urn":"http://www.opengis.net/doc/BP/cdb-core-primer/2.0",
+                "title":"Volume 0: Primer for the OGC CDB Standard: Model and Physical Data Store Structure",
+                "path":"standard_document.adoc",
+                "options": ["--trace"],
+                "a":[
+                        "data-uri"
+                ]
+        }
+}
