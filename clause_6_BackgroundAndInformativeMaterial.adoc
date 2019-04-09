@@ -90,14 +90,14 @@ image::images/image2.jpeg[untitled1,width=564,height=298]
 === Use of a CDB conformant data store as an Off-line Data store Repository
 
 CDB can be used as a structured offline repository. This capability is
-described in Section 6.2 (Check) Volume 10 Implementation Guidance.
+described in Section 6.2 of OGC CDB v1.1 Volume 10 Implementation Guidance.
 
 === Use of a CDB conformant data store as a Combined Off-line and Run-time Data store Repository
 
 A data store conforming to this CDB standard can be both used an offline
 repository for data store authoring tools or as an on-line (or runtime)
-repository for simulators. This approach is described in Volume 10
-Implementation Guidance, section 6.4 (Check).
+repository for simulators. This approach is described in OGC CDB v1.1 Volume 10
+Implementation Guidance, Section 6.4.
 
 === Client-Device Independence
 
@@ -398,7 +398,7 @@ client-devices and/or publishers, it is nonetheless possible to improve
 parametric correlation, at runtime, via control of the
 client-devices/publishers.
 
-This topic is discussed in more detail in the OGC CDB Best Practice, Volume 1 Section 1.6.6 (Check), Synthetic Environment Database Correlation.
+This topic is discussed in more detail in the https://portal.opengeospatial.org/files/?artifact_id=61935[OGC CDB v1.0 Best Practice, Volume 1 Section 1.6.6, Synthetic Environment Database Correlation].
 
 ==== Increased Synthetic Environment Data Store Longevity
 
@@ -646,7 +646,7 @@ In applications that are less demanding than flight simulation, the CDB
 standard can be implemented without resorting to high-performance
 computer platforms. For instance, the simulator repository mass storage
 system (shown in Figure 8: _Typical CDB Implementation on a Suite of
-Simulators_)(Check) can be a single disk storage device. In demanding
+Simulators_) can be a single disk storage device. In demanding
 applications, the simulator repository can be implemented as a
 large-scale Storage Area Network (SAN). Similarly, the Update Manager
 IUM), the CDB server and each of the client-device runtime publishers
