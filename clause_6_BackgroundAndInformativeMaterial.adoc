@@ -196,9 +196,6 @@ database is required each time a target area is added.
 .Typical Evolution of a Database
 image::images/image3.png[image,width=579,height=169]
 
-
-
-
 The CDB standard allows the “dissociation” of the synthetic environment
 database’s extent, resolution, fidelity, precision, structure and format
 from client-devices. This concept is not limited to aspects of
@@ -357,15 +354,15 @@ imposed by the simulator.
 The CDB standard tile organization provides the means to implement
 deterministic loading and/or paging of the data store because each tile
 corresponds to the same amount of data (i.e., a “quanta” of information
-called a LOD-tile), regardless of its position on earth and regardless
-of its assigned LOD. This is a key characteristic of the CDB standard
+called a LoD-tile), regardless of its position on earth and regardless
+of its assigned LoD. This is a key characteristic of the CDB standard
 and is necessary to ensure deterministic operation of client-devices,
 even when the data resolution varies considerably from region to region
 or when the data is modeled at an extremely high-resolution. It is quite
 straightforward for a client-device to determine the amount of memory it
 must locally allocate when loading (or paging-in) a geographical area of
 interest. If the geographical area of interest exceeds the
-client-device’s capabilities, it can easily revert to a coarser LOD,
+client-device’s capabilities, it can easily revert to a coarser LoD,
 hence gracefully degrading, as opposed to aborting (due to an internal
 failure in allocating sufficient memory) or “skipping” over the
 offending area.
@@ -443,7 +440,6 @@ features.
 2. Compression of storage-intensive datasets: provides effective compression of key datasets.
 3. Fine-grain versioning: A CDB structured data store is internally versioned. It is possible to revert to prior representations of the SE without restoring stored back-ups of the data store. Because the underlying mechanism is fine-grained, only in affected geographic areas or datasets of the data store need to be versioned.
 
-
 === CDB Model Overview
 
 The following sections provide a general description and focus of the
@@ -510,7 +506,6 @@ support concurrent generation and deployment.
 .CDB Standard Tile/Layer Structure
 image::images/image7.png[image,width=569,height=270]
 
-
 ==== Tile/Layer/Level-of-Detail Structure
 
 The CDB standard offers a structure that is well suited for the
@@ -519,27 +514,25 @@ important means to organize the synthetic environment data:
 
 * Tiles
 * Layers
-* Level-of-Detail (LOD)
-
+* Level-of-Detail (LoD)
 
 ===== Tiles
 
 The CDB standard defines a top-level tile structure designed to organize
 the data for efficient access in real-time. The tile structure provides
 an effective means for simulator client-devices to access the datasets
-of a geographical area at a selected LOD. Since the spatial dimension of
-tiles varies inversely with LOD (i.e., resolution), client-devices can
+of a geographical area at a selected LoD. Since the spatial dimension of
+tiles varies inversely with LoD (i.e., resolution), client-devices can
 readily predict the amount of data contained within the tile; as a
 result, the management of memory within client-devices is simplified and
 much more deterministic.
 
-The CDB standard Conceptual Model is logically organized as a strip of
+The CDB Conceptual Model is logically organized as a strip of
 geo-unit aligned tiles along each earth slice. Each earth slice is
 divided into a decreasing number of tiles to account for the fact that
 the length of an earth slice decreases with increasing latitude.
 
 ===== Layers
-
 
 The CDB model is also logically organized as distinct layers of
 information. The layers are theoretically independent from each other,
@@ -563,21 +556,21 @@ simulator CGF client-device will not likely have a reason to use ground
 raster imagery. However, it is quite likely interested in accessing
 ground surface properties when determining traffic-ability.
 
-===== Levels of Detail (LOD)
+===== Levels of Detail (LoD)
 
 Level of detail (LoD) is a concept available in various disciplines from
 computer graphics and cartography to electrical circuit design. For GIS
 practitioners, the discipline where level of detail is most relevant and
-well known is 3D city modelling. In the CDB, LOD is a mechanism for
+well known is 3D city modelling. In the CDB, LoD is a mechanism for
 allowing increasing levels of fidelity without impacting system
-performance. In CDB data stores, LODs are also an integral part of the
-physical database structure. The LOD requirement for simulation systems
+performance. In CDB data stores, LoDs are also an integral part of the
+physical database structure. The LoD requirement for simulation systems
 is similar with regard to requirements for increased fidelity in 3d City
 Models and standards such as CityGML.
 
-The availability of LOD representations is critical to real-time
+The availability of LoD representations is critical to real-time
 performance, especially when dealing with grid-organized data. Most
-simulation client-devices can readily take advantage of a LOD structure
+simulation client-devices can readily take advantage of a LoD structure
 because, in many cases, less detail/information is necessary at
 increasing distances from the simulated object. As a result, many
 client-devices can reduce (by 100-fold or more) the required bandwidth
@@ -585,25 +578,25 @@ to access synthetic environment data in real-time.
 
 Additionally, the availability of LODs can be readily exploited by
 simulator client-devices to improve algorithmic efficiency. Devices such
-as Image Generators (IGs) can readily take advantage of an LOD structure
+as Image Generators (IGs) can readily take advantage of an LoD structure
 because image perspective naturally reduces image detail with distance
 as a result of the perspective computation inherent to the IG. As a
 result, much less geometric detail and texture detail need be processed
 or considered at far range.
 
-The spatial sampling of each successive LOD in a CDB data store follows
+The spatial sampling of each successive LoD in a CDB data store follows
 power of two progressions. This is a prerequisite for the efficient and
 deterministic management of memory by all client-devices of a typical
 simulator.
 
-The terrain LOD can be controlled to the tile level. Since the CDB
-standard specifies a variable LOD hierarchy spanning up to 34 levels, it
-is possible to control the allocation of LODs by area. The variable LOD
-hierarchy provides for efficient use of storage because the LOD
+The terrain LoD can be controlled to the tile level. Since the CDB
+standard specifies a variable LoD hierarchy spanning up to 34 levels, it
+is possible to control the allocation of LoDs by area. The variable LoD
+hierarchy provides for efficient use of storage because the LoD
 hierarchy needs to be deepened only in the areas where higher resolution
 is desired. <<img_VariableAllocationofLOD>>: _Variable Allocation of LOD_, illustrates an earth
 strip made up of a series of tiles; some portions of the strip have been
-modeled with 3, 4, or 5 LODs according to the application requirements.
+modeled with 3, 4, or 5 LoDs according to the application requirements.
 
 [#img_VariableAllocationofLOD,reftext='{figure-caption} {counter:figure-num}']
 ._Variable Allocation of LOD_
@@ -615,7 +608,7 @@ This CDB standard along with the CDB Best Practices describes the data
 content, representation, as well as the logical organization of the data
 stored in the data store:
 
-.  The Data store structure comprises all of the data structures used to access data store content (such as file paths, Level-of-Detail (LOD), lists) to speed up access, information layering, versioning and configuration management; and
+.  The Data store structure comprises all of the data structures used to access data store content (such as file paths, Level-of-Detail (LoD), lists) to speed up access, information layering, versioning and configuration management; and
 .  Naming Conventions: Used to describe a naming hierarchy for cultural models, moving models, lights and model components.
 
 ===== Other Applications of the CDB Standard
