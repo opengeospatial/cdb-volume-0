@@ -561,7 +561,7 @@ ground surface properties when determining traffic-ability.
 Level of detail (LoD) is a concept available in various disciplines from
 computer graphics and cartography to electrical circuit design. For GIS
 practitioners, the discipline where level of detail is most relevant and
-well known is 3D city modelling. In the CDB, LoD is a mechanism for
+well known is 3D city modeling. In the CDB, LoD is a mechanism for
 allowing increasing levels of fidelity without impacting system
 performance. In CDB data stores, LoDs are also an integral part of the
 physical database structure. The LoD requirement for simulation systems
