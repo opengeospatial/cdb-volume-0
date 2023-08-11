@@ -2,8 +2,8 @@
 
 The following are the key normative references for this Primer
 
-* OGC 15-113r5, Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure version 1.1.
-* OGC 16-007r4, Volume 11: OGC CDB Core Standard Conceptual Model version 1.1.
+* OGC 15-113r6, Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure version 1.2.
+* OGC 16-007r5, Volume 11: OGC CDB Core Standard Conceptual Model version 1.2.
 
 The following informative references are applicable for this Primer.
 
