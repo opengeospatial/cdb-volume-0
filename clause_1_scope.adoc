@@ -26,7 +26,7 @@ Given that a CDB data store defines a structured storage structure for represent
 
 The modification/notification approach is well-suited for a broad gamut of simulations. However, some simulations are very data intensive and require excessive broadcasting bandwidths to other federates. In such cases, these dynamic simulations would have to be replicated in the other client-devices of the federation. Good examples of this are visual system special effects (e.g., rotor downwash effect, missile plumes, muzzle flashes, cast landing lights). Typically such simulations are proprietary and intrinsic to the client-devices. Other examples of this include the varying effects of weather footnote:[Time-varying weather simulation effects could be simulated by a “weather server” simulation subsystem which in turn can rely on the terrain elevation and terrain material datasets to perform its simulation of weather in real-time.] (local winds, temperature, humidity, particulates, etc.) and oceans (currents, temperature, etc.).
 
-For ease of editing and review, the standard has been separated into 14 document Volumes, one extension document and a schema repository.
+For ease of editing and review, the standard has been separated into 15 document Volumes and a schema repository.
 
 * Volume 0: OGC CDB Companion Primer for the CDB standard (Best Practice).
 * Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure. The main body (core) of the CDB standard (Normative).
@@ -43,7 +43,7 @@ For ease of editing and review, the standard has been separated into 14 document
 * Volume 12: OGC CDB Navaids Attribution and Navaids Attribution Enumeration Values (Best Practice).
 * Volume 13: OGC CDB Rules for Encoding CDB Vector Data using GeoPackage (Normative, Optional Extension).
 * Volume 14: OGC CDB Guidance on Conversion of CDB Shapefiles into CDB GeoPackages (Best Practice).
-* OGC CDB Optional Multi-Spectral Imagery Extension (Normative).
+* OGC CDB Optional Multi-Spectral Imagery Extension (Normative, Optional Extension).
 
 === Key and really important information - CDB dataset codes
 
