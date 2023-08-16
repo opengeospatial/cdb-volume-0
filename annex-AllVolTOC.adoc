@@ -2,4 +2,4 @@
 :appendix-caption: Annex
 == All Volumes Table of Contents
 
-[red]#*_Placeholder# for a consolidated TOC from all volumes that will be created after all the volumes reach their 'ready for adoption' status since some things like section and paragraph numbers are generated in the final conversion_*#
+[red]#*_Placeholder# for a consolidated TOC from all volumes that will be created after all the volumes reach their 'ready for adoption' status since some things like section and paragraph numbers are generated in the final conversion_*
