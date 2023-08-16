@@ -105,6 +105,9 @@ add or remove annexes after "A" as necessary
 Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
 ////
+
+include::annex-AllVolTOC.adoc[]
+
 include::annex-history.adoc[]
 
 <<<
