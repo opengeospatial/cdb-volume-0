@@ -3,3 +3,8 @@
 == All Volumes Table of Contents
 
 [red]#*_Placeholder# for a consolidated TOC from all volumes that will be created after all the volumes reach their 'ready for adoption' status since some things like section and paragraph numbers are generated in the final conversion_*
+
+Volume 0:  OGC CDB Companion Primer for the CDB standard (Best Practice)
+
+image::images/Vol0TOCp1.png[image,width=600,height=380]
+image::images/Vol0TOCP2.png[image,width=600,height=380]
