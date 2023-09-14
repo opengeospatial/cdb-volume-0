@@ -10,6 +10,7 @@
 |2018-01-16 |1.1 |C. Reed |Various |Minor corrections to typos
 |2019-12-16 |1.2 |C. Reed | Various |Changes for version 1.2
 |2023-08-01 |1.3 |D. Graham | Front Matter, Scope |Editorial changes for V1.3
+|2023-09-014 |1.3 |C. Reed | Front Matter, Scope |Minor editorial changes for V1.3
 |===
 
 //// 
