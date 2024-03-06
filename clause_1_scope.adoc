@@ -1,7 +1,7 @@
 == What is a CDB Conformant Data Store?
 
 A CDB footnote:[Formerly known as Common Database the OGC Members determined that going forward that this standard shall be known as “CDB”.] conformant data store provides a representation of the whole earth optimized for very high speed access and visualization. The physical data store model divides the earth geographically into geodetic
-tiles. Each tile is defined by a latitude/longitude boundary. Each tile contains one or more specific sets of features. The CDB model uses the WGS-84 coordinate reference system (CRS). Details of the model along with implementation requirements are provided in Volume 1: OGC CDB Core [16-113r3]. Any simulator client-devices access CDB geospatial content using a WGS-84 CRS based indexing and tiling scheme. The physical and logical tiling system specified in the CDB standard is similar to an equal area implementation of a Discrete Global Grid System (DGGS) footnote:[Please go to http://www.opengeospatial.org/projects/groups/dggsswg for information on an OGC candidate DGGS standard.]. However, the implementation predates the OGC DGGS standards work and as such does not implement all the OGC DGGS requirements.
+tiles. Each tile is defined by a latitude/longitude boundary. Each tile contains one or more specific sets of features. The CDB model uses the WGS-84 coordinate reference system (CRS). Details of the model along with implementation requirements are provided in Volume 1: OGC CDB Core [16-113r3]. Any simulator client-devices access CDB geospatial content using a WGS-84 CRS based indexing and tiling scheme. The physical and logical tiling system specified in the CDB Standard is similar to an equal area implementation of a Discrete Global Grid System (DGGS) footnote:[Please go to http://www.opengeospatial.org/projects/groups/dggsswg for information on an OGC candidate DGGS standard.]. However, the implementation predates the OGC DGGS Standard work and as such does not implement all the OGC DGGS requirements.
 
 A CDB data store contains the features and modeled representation of the synthetic environment. A CDB data store can contain:
 
@@ -12,21 +12,21 @@ A CDB data store contains the features and modeled representation of the synthet
 * 3D features with their modeled geometry,
 * texture and attribution.
 
-This standard also makes provision for the representation of moving models. An example of a moving model is a tank moving across the terrain as viewed by a helicopter pilot. The representation of moving models is comprehensive and goes well beyond other visualization standards because it makes provisions for the standardized naming conventions, material and feature attribution, radar/laser reflectivity, aircraft and airport lighting systems, armaments, special effects, collision points/volumes just to name a few. These provisions ensure interoperable simulation applications that are accessing a CDB structured data store.
+The CDB Standard also makes provision for the representation of moving models. An example of a moving model is a tank moving across the terrain as viewed by a helicopter pilot. The representation of moving models is comprehensive and goes well beyond other visualization standards because it makes provisions for the standardized naming conventions, material and feature attribution, radar/laser reflectivity, aircraft and airport lighting systems, armaments, special effects, collision points/volumes just to name a few. These provisions ensure interoperable simulation applications that are accessing a CDB structured data store.
 
-The CDB standard governs all requirements of the CDB data store, as follows:
+The CDB Standard governs all requirements of the CDB data store, as follows:
 
 * Data content and representation of the synthetic environment;
 * Structure and organization of the synthetic environment; and
 * File format of the synthetic environment as stored on media.
 
-The CDB standard describes a modeled environment representation for distributed simulation applications. The Section titled "<<UseOfCDBInApplicationsRequiringDynamicSyntheticEnvironments>>" discusses how a CDB-compliant simulator could be adapted to handle modifications of the synthetic environment in real-time.
+The CDB Standard describes a modeled environment representation for distributed simulation applications. The Section titled "<<UseOfCDBInApplicationsRequiringDynamicSyntheticEnvironments>>" discusses how a CDB-compliant simulator could be adapted to handle modifications of the synthetic environment in real-time.
 
 Given that a CDB data store defines a structured storage structure for representation and attribution of terrain, geographic objects, moving objects and entities, it is possible to design a broad range of synthetic environment simulations that modify synthetic environments in real-time. Such simulations can modify the CDB data store and then notify other systems in a simulation federate footnote:[This usage of federate and federation comes from IEEE Std 1516 in the context of Federation Object Models (FOM) and Simulation Object Models (SOM). Common HLA terminology: Federate - an HLA compliant simulation entity. Federation - multiple simulation entities connected via the RTI using a common OMT.] that share a CDB data store about the changes. This provides a synthetic environment (SE) that is persistent and fully correlated across all simulation federates. For example, terrain “trafficability” could be handled by a new SE simulation that dynamically calculates soil moisture content as a function of localized rain precipitation and soil types/composition. A second simulation would then derive the resulting soil physics and determine vehicle wheel slippage across the varying terrain conditions.
 
 The modification/notification approach is well-suited for a broad gamut of simulations. However, some simulations are very data intensive and require excessive broadcasting bandwidths to other federates. In such cases, these dynamic simulations would have to be replicated in the other client-devices of the federation. Good examples of this are visual system special effects (e.g., rotor downwash effect, missile plumes, muzzle flashes, cast landing lights). Typically such simulations are proprietary and intrinsic to the client-devices. Other examples of this include the varying effects of weather footnote:[Time-varying weather simulation effects could be simulated by a “weather server” simulation subsystem which in turn can rely on the terrain elevation and terrain material datasets to perform its simulation of weather in real-time.] (local winds, temperature, humidity, particulates, etc.) and oceans (currents, temperature, etc.).
 
-For ease of editing and review, the standard has been separated into 15 document Volumes and a schema repository.
+For ease of editing and review, the CDB Standard has been separated into 15 document Volumes and a schema repository.
 
 * Volume 0: OGC CDB Companion Primer for the CDB standard (Best Practice).
 * Volume 1: OGC CDB Core Standard: Model and Physical Data Store Structure. The main body (core) of the CDB standard (Normative).
@@ -48,8 +48,8 @@ For ease of editing and review, the standard has been separated into 15 document
 === Key and really important information - CDB dataset codes
 
 The table below summarizes the CDB dataset codes along with their names
-and their applicability to the community 3.0 specification and the OGC
-standard, which is based on CDB version 3.2.
+and their applicability to the community 3.0 specification and the OGC CDB
+Standard, which was originally based on the CDB version 3.2 specification.
 
 {set:cellbgcolor:white}
 [cols=",,,",options="header",]
